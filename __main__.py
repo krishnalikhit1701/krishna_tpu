@@ -1,3 +1,5 @@
+pip install vk_api
+
 import time
 import json
 import os
