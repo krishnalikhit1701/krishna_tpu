@@ -234,10 +234,10 @@ class GetInfo:
 
 if __name__=='__main__':
 
-    TARGET = 'miraprinse'
+    TARGET = 'usova212'
 
     login, password = json.load(open('secret.json'))
-    getter = GetInfo(login, password, usova212, type = 'user_friends', normed = False) # or type = 'group_members'/'user_friends'
+    getter = GetInfo(login, password, TARGET, type = 'user_friends', normed = False) # or type = 'group_members'/'user_friends'
     getter.get_members_ids()
     getter.get_users_data()
     getter.calculate()
